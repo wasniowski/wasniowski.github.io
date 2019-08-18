@@ -55,7 +55,7 @@ header nav ul li a:hover{ border-color: #fff}
 #TL{ padding: 30px; 0}
 #TLTimeline{ width: 100%; height: 1px; background: rgba(255,255,255,0.15); position: relative;}
 #TLDatesOuter{ position: relative; overflow: hidden; width: 100%; height: 50px; margin-top: -38px;}
-#TLDates{ transition: all 0.5s ease-in-out; position: absolute; list-style: none; height: 50px; top:0; left: 50%; margin-left: -40px; width: 1040px; }
+#TLDates{ transition: all 0.5s ease-in-out; position: absolute; list-style: none; height: 50px; top:0; left: 50%; margin-left: -40px; width: 1120px; }
 #TLDates li{transition: all 0.5s ease-in-out; cursor: pointer; width: 80px; float: left; text-align: center; position: relative; font-weight: 800; font-size: 16px; line-height: 20px; padding-bottom: 25px; color: rgba(255,255,255,0.15); }
 #TLDates li:hover{ color: rgba(255,255,255,0.5)}
 #TLDates li.active{ color: #ffbd06}
