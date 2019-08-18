@@ -1,0 +1,160 @@
+/* author: Kamil Wasniowski		*
+ * www.wasniowski.pl 			*/
+
+body{ color: #454545; margin:0; padding: 0; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 24px; box-sizing: border-box; -o-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box}
+
+h1, h2, h3, h4, h5, h6, p, form, ul, li, div{margin: 0; padding: 0; }
+input, textarea{ padding: 0; margin: 0; outline: none; -webkit-border-radius:0}
+fieldset{border:0; margin:0; padding: 0;}
+img{border:0; vertical-align: bottom;}
+a{text-decoration:none;}
+a:hover{text-decoration:none; }
+.clear{clear: both}
+.txtright{ text-align: right}
+
+
+.left{ float: left;}
+.right{ float: right;}
+
+.top{ background: url(../gfx/new_bg.jpg) center top no-repeat; background-size: cover; color: #fff;}
+.top h4{ text-transform: uppercase; margin-bottom: 10px; font-size: 28px; font-weight: 800}
+
+header{ padding: 35px 0; width: 100%; position: relative; z-index: 10; box-shadow: none; transition: all 0.5s ease-in-out;}
+header.open{ opacity: 0}
+header a, header a:hover{ color: #fff;}
+header .logo{ display: block; width: 175px; height: 24px; background: url(../gfx/wasniowski.png) left top no-repeat; background-size: 175px auto; }
+header nav ul{ list-style: none; text-align: right; font-size: 12px; line-height: 24px; font-weight: 800; text-transform: uppercase}
+header nav ul li{ display: inline-block; margin-left: 10px;}
+header nav ul li a{ padding: 5px 0; transition: all 0.5s ease-in-out; border-bottom: 1px solid transparent}
+header nav ul li a:hover{ border-color: #fff}
+
+.fixedNav {position: fixed; top:0; left: 0; width: 100%;}
+.fixedNav header{ background: #f9f9f9; box-shadow: 0 4px 0 0px rgba(0,0,0,0.2); padding: 27px 0; -webkit-transform: translate(0,-100px)}
+.fixedNav header.open{-webkit-transform: translate(0,0); opacity: 1}
+.fixedNav header a{ color: #454545}
+.fixedNav header .logo{ background-position: left -37px;}
+.fixedNav header nav ul li a:hover{ border-color: #454545}
+
+.top .tab{ display: table; width: 100%; }
+.top .centering{ width: 940px; display: table-cell; text-align: center; vertical-align: middle; min-height: 1px;}
+.top .centering p{ margin: 30px 60px 0 60px; font-size: 18px; line-height: 28px; font-weight: 300}
+.top .arrowdown{ width: 15px; height: 33px; background: url(../gfx/mouse.png) center top no-repeat; margin: 0 auto; opacity: 0.5; background-size: 15px auto}
+
+#omnie{ padding-bottom: 50px;}
+#omnie h3{ text-transform: uppercase; margin: 50px 0 80px 0; font-size: 28px; text-align: center; font-weight: 800}
+#omnie article img{ margin-bottom: 30px;}
+#omnie article{ text-align: center}
+#omnie article p{ padding: 0 20px 20px 20px}
+#omnie h2{ font-size: 18px; font-weight: 800; text-transform: uppercase; margin-bottom: 20px;}
+
+#cv{ background: #3d2c51; color: #fff; padding-bottom: 30px;}
+#cv h3{ text-transform: uppercase; margin: 50px 0 20px 0; font-size: 28px; text-align: center; font-weight: 800}
+#cv .info{ color: rgba(255,255,255,0.25); margin-bottom: 70px; text-align: center}
+
+
+#TL{ padding: 30px; 0}
+#TLTimeline{ width: 100%; height: 1px; background: rgba(255,255,255,0.15); position: relative;}
+#TLDatesOuter{ position: relative; overflow: hidden; width: 100%; height: 50px; margin-top: -38px;}
+#TLDates{ transition: all 0.5s ease-in-out; position: absolute; list-style: none; height: 50px; top:0; left: 50%; margin-left: -40px; width: 1040px; }
+#TLDates li{transition: all 0.5s ease-in-out; cursor: pointer; width: 80px; float: left; text-align: center; position: relative; font-weight: 800; font-size: 16px; line-height: 20px; padding-bottom: 25px; color: rgba(255,255,255,0.15); }
+#TLDates li:hover{ color: rgba(255,255,255,0.5)}
+#TLDates li.active{ color: #ffbd06}
+#TLDates li:hover:after{ border-color: rgba(255,255,255,0.5)}
+#TLDates li:after{ transition: all 0.5s ease-in-out; content: ''; display: block; position: absolute; bottom: 0px; left: 50%; margin-left: -9px; width: 16px; height: 16px; background: #3d2c51; border-radius: 100px; border: 4px solid rgba(255,255,255,0.15);}
+#TLDates li.active:after{ border-color: #ffbd06}
+#TLButtons{display: none; margin-top: 32px; text-align: center;}
+#TLButtons div{ display: inline-block;  line-height: 40px; min-width: 40px; border: 1px solid #eee; border-radius: 4px}
+#TLDesc article{ text-align: center; display: none}
+#TLDesc article p{ margin: 0; padding: 0}
+#TLDesc article h4{ text-transform: uppercase; font-weight: 800; font-size: 18px; margin: 30px 0 15px 0; }
+#TLDesc article a{ color: #fff;}
+
+
+#portfolio h3{ text-transform: uppercase; margin: 50px 0 20px 0; font-size: 28px; text-align: center; font-weight: 800}
+#portfolio .info{ color: rgba(0,0,0,0.4); margin-bottom: 70px; text-align: center}
+
+#portfolio:after{ content: ''; clear: both; display: block}
+#portfolio img{ width: 100%; height: auto}
+#portfolio .prtfl{ float: left; width: 20%; position: relative; overflow: hidden;}
+#portfolio .prtfl .description{transition: all 0.5s ease-in-out; color: #fff; position: absolute; top:0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); transform: translateY(100%); -webkit-transform: translateY(100%);  }
+#portfolio .prtfl:hover .description{ transform: translateY(0); -webkit-transform: translateY(0); }
+#portfolio .prtfl .description .tb{ display: table; width: 100%; height: 100%;}
+#portfolio .prtfl .description .tb .tc{ display: table-cell; vertical-align: middle; text-align: center}
+#portfolio .prtfl .description h2{ font-weight: 800; font-size: 18px; padding: 0 20px; line-height: 21px; margin-bottom: 5px; text-transform: uppercase;  }
+
+#fed h3{ text-transform: uppercase; margin: 50px 0 20px 0; font-size: 28px; text-align: center; font-weight: 800}
+#fed .info{ color: rgba(0,0,0,0.4); margin-bottom: 70px; text-align: center}
+
+#fed article { text-align: center; margin-bottom: 50px}
+#fed article .image{ width: 280px; height: 280px; border-radius: 200px; background-size: cover !important; margin: 0 auto; margin-bottom: 30px}
+#fed article h2{text-transform: uppercase; font-weight: 800; font-size: 18px; margin: 0 0 15px 0; }
+#fed article p{ margin-bottom: 20px;}
+
+::-webkit-input-placeholder { color: #555;}
+:-moz-placeholder { color: #555; opacity: 1;}
+::-moz-placeholder {color: #555; opacity: 1;}
+:-ms-input-placeholder { color: #555;}
+
+#contact{ background: #333; color: #fff; height: 460px; overflow: hidden}
+#contact a{ color: #fff}
+#contact article{ padding-bottom: 30px; }
+#contact h3{ text-transform: uppercase; margin: 50px 0 20px 0; font-size: 18px; font-weight: 800}
+#contact p{ margin-bottom: 20px;}
+
+input[type=text], textarea{ transition: all 0.5s ease-in-out; width: 100%; border: 0; border-bottom: 1px solid #454545; margin-bottom: 20px; background: 0; padding: 0 0 10px 0; text-transform: uppercase; font-family: 'Open Sans', sans-serif; font-weight: 700; }
+textarea{ resize: vertical; min-height: 80px;}
+input[type=text]:focus, textarea:focus{ border-color: #ccc;}
+input[type=submit]{ background: none; border: 1px solid #454545; color: #555; text-transform: uppercase; font-family: 'Open Sans', sans-serif; font-weight: 700; padding: 10px; margin-bottom: 50px;}
+
+.mapcanv{ position: relative}
+#mapa{ height: 485px; position: absolute; top:0; left: 15px}
+
+footer{ padding: 30px 0}
+footer a{ color: #333;}
+
+@media (max-width: 1199px) {
+	#fed article .image{ width: 240px; height: 240px;}
+}
+
+@media (max-width: 991px) {
+	#portfolio .prtfl{ width: 33.333333%; }
+	
+	#omnie article .col-sm-8{ text-align: left}
+	#omnie article p{ padding: 0 20px 50px 0}
+	
+	#TLDesc p{ display: inline; padding: 0 !important;}
+	
+	#fed article .image{ width: 200px; height: 200px;}
+	#fed article .description{ text-align: left}
+	#fed article .description h2{ margin-top: 20px}
+	
+	#contact{ height: auto; overflow: visible}
+	#mapa{ height: 300px; width: 100%; position: static; left: 0; margin-bottom: 50px}
+
+}
+
+@media (max-width: 767px) {
+	header .logo{ margin: 20px auto}
+	header nav{ display: none;}
+	
+	.top .centering p{ margin: 30px 20px 50px 20px; font-size: 14px; line-height: 21px; font-weight: 300}
+	.top .arrowdown{ margin-bottom: 15px;}
+	
+	#omnie article .col-sm-8{ text-align: center}
+	#omnie article p{ padding: 0 20px 50px 20px}
+	
+	#portfolio .prtfl{ width: 50%; }
+	#portfolio .prtfl:last-of-type{ display: none}
+	.fixedNav { display: none}
+	
+	#fed article .description{ text-align: center}
+	
+	#contact{ text-align: center}
+	.cdata{ border-bottom: 1px solid #454545}
+	
+	footer, footer .txtright{ text-align: center;}
+}
+@media (max-width: 500px) {
+	#portfolio .prtfl{ width: 100%; }
+	
+}

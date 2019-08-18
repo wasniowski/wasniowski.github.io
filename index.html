@@ -1,1 +1,474 @@
-<h1>Kamil</h1>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Wasniowski.pl - front-end developer, fotograf | Tychy</title>
+		
+		<meta name="robots" content="index,follow" />
+		<meta name="revisit-after" content="1 days" />
+		<meta name="keywords" content="Kamil Waśniowski, front-end developer, fotograf, koder html, skrypty jquery" />
+		<meta name="description" content="Od ponad 10 lat związany ze środowiskiem internetowym. HTML / CSS / JavaScript to moja praca i hobby. Weekendami fotograf ślubny." />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/swipebox.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+					
+	</head>
+	<body>
+		<section class="top">
+			<header>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<a href="../" class="logo"></a>
+						</div>
+						<div class="col-md-8 col-sm-8">
+							<nav>
+								<ul>
+									<li><a href="#omnie">O mnie</a></li>
+									<li><a href="#cv">CV</a></li>
+									<li><a href="#portfolio">Portfolio</a></li>
+									<li><a href="#fed">FED</a></li>
+									<li><a href="#contact">Kontakt</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div><!-- /.row -->
+				</div>
+			</header>
+			<div class="container">
+				<div class="tab">
+					<article class="centering">
+						<h4>Cześć, co słychać?</h4>
+						<p>Nazywam się Kamil Waśniowski. Od niespełna 10 lat jestem zawodowo związany ze środowiskiem internetowym. Początkowo jako projektant, obecnie głównie jako programista warstwy front-endowej. W wolnych chwilach robię zdjęcia, a weekendami pracuję jako fotograf ślubny.</p>
+					</article>
+				</div>
+				<div class="arrowdown"></div>
+			</div>
+		</section><!-- /.top -->
+		<section id="omnie">
+			<div class="container">
+				<h3>O mnie</h3>	
+				
+				<div class="row">
+					<div class="col-md-4">
+						<article class="row">
+							<div class="col-md-12 col-sm-4 col-xs-12">
+								<img src="gfx/icon_html.png" alt="icon_html" width="90" height="90">
+							</div>
+							<div class="col-md-12 col-sm-8 col-xs-12">
+								<h2>HTML 5, CSS 3, RWD</h2>
+								<p>Język HTML towarzyszy mi od początku mojej przygody z internetem. Swoje pierwsze projekty graficzne wdrażałem samodzielnie, co pozwoliło mi poznać podstawy tego języka. Obecnie tworzę kod głównie pod strony responsywne, a wszystkie możliwie interakcje przenoszę do kaskadowych arkuszy stylów. </p>
+							</div>
+						</article>
+					</div>
+					<div class="col-md-4">
+						<article class="row">
+							<div class="col-md-12 col-sm-4 col-xs-12">
+								<img src="gfx/icon_javascript.png" alt="icon_javascript" width="90" height="90">
+							</div>
+							<div class="col-md-12 col-sm-8 col-xs-12">
+								<h2>Javascript</h2>
+								<p>Początkowo służył mi jako rozwiązanie problemów, których nie można było napisać za pomocą CSS'ów. Dzisiaj, z użyciem jQuery, wykorzystuję go do pisania interaktywnych stron. Połączenie JS i Phonegapa pozwoliło mi również napisać aplikację na urządzenia oparte o system iOs oraz Android. </p>
+							</div>
+						</article>
+					</div>
+					<div class="col-md-4">
+						<article>
+							<div class="col-md-12 col-sm-4 col-xs-12">
+								<img src="gfx/icon_fotografia.png" alt="icon_fotografia" width="90" height="90">
+							</div>
+							<div class="col-md-12 col-sm-8 col-xs-12">
+								<h2>Fotografia</h2>
+								<p>Zdjęcia to fantastyczna odskocznia od programowania. W przeciwieństwie od pisania suchych wierszy kodu - fotografia daje możliwość przelania emocji na papier. Oprócz fotografii komercyjnej, głownie na potrzeby stron internetowych - realizuję się jako fotograf ślubny.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="cv">
+			<div class="container">
+				<h3>CV</h3>
+				<p class="info">Na osi czasu oznaczyłem najważniejsze momenty w mojej karierze zawodowej i nie tylko.<br/> Klikaj w daty, aby przełączać widok.</p>
+				
+				<div id="TL">
+					<div id="TLTimeline"></div>
+					<div id="TLDatesOuter">
+						<ul id="TLDates">
+							<li class="active">2002</li>
+							<li>2004</li>
+							<li>2005</li>
+							<li>2006</li>
+							<li>2008</li>
+							<li>2009</li>
+							<li>2011</li>
+							<li>2012</li>
+							<li>2013</li>
+							<li>2014</li>
+							<li>2015</li>
+							<li>2016</li>
+							<li>2017</li>
+						</ul>
+					</div>
+					<div id="TLButtons">
+						<div class="prev">&laquo;</div>
+						<div class="next">&raquo;</div>
+					</div>
+					
+					<div id="TLDesc">
+						<article>
+							<h4>Moja pierwsza strona internetowa</h4>
+							<p>Razem z Szymonem - kolegą ze szkolnej ławy - robimy stronę w formie psikusa klasowym koleżankom. </p> 
+							<p>Zainspirowana książką Davida Siegel'a <em>Creating Killer Web Sites</em>. Stronę utrzymuję do dziś ;) <a href="http://www.offline.wasniowski.pl/" target="_blank">www.offline.wasniowski.pl</a></p>
+						</article>
+						<article>
+							<h4>Rozpoczynam informatyczne studia inżynierskie</h4>
+							<p>W ostatniej chwili postanowiam zmienić kierunek studiów z socjologii na informatykę.</p>
+							<p>Rozpoczynam dzienne studia w Wyższej Szkole Technologii Informatycznych w Katowicach.</p>
+						</article>
+						<article>
+							<h4>Pierwsza praca - Xann Internet Solutions</h4>
+							<p>Zmieniam tryb studiów na zaoczny i podejmuję pracę w Xann IS jako grafik i koder. Wszystkie projekty robimy, poświęcając  </p>
+							<p>dużą uwagę aspektom SEO. Z czasem do moich obowiązków dołączają koordynacja prac SEO oraz obsługa kluczowych klientów.</p>
+						</article>
+						<article>
+							<h4>Kupuję cyfrową lustrzankę Canona</h4>
+							<p>Ponieważ od zawsze lubiłem robić zdjęcia postanawiam zmienić aparat kompaktowy na lustro.</p>
+							<p>Zabieram aparat wszędzie, gdzie tylko mogę. Dokupując kolejne akcesoria zauważam, że fotografia to studnia bez dna ;)</p>
+						</article>
+						<article>
+							<h4>Kończę studia z tytułem inżyniera informatyki</h4>
+							<p>18 kwietnia 2008 roku bronię swoją pracę inżynierską nt. <em>Optymalizacja i pozycjonowanie stron internetowych na wybranych przykładach</em></p>
+							<p><em>z branży usługowo-handlowych</em>. Dwa dni później rodzi się mój pierwszy syn.</p>
+						</article>
+						<article>
+							<h4>Nawiązuje współpracę z Planmysite.com</h4>
+							<p>Poza pracą etatową jako freelancer zaczynam współpracę z amerykańską agencją interaktywną PlanMySite.com</p>
+							<p>Do moich obowiązków należy głównie projektowanie stron. Plan My Site z czasem przeradza się w Incore.com</p>
+						</article>
+						<article>
+							<h4>Powstaje projekt fotoreportaz-slubny.com</h4>
+							<p>Po ponad dwuletniej współpracy z VideoFotoSphinx postanawiam rozpocząć samodzielną działalność w branży ślubnej.</p>
+							<p>Wymieniam dotychczasowy aparat na pełną klatkę i z nową stroną zdobywam klientów jako fotograf ślubny.</p>
+						</article>
+						<article>
+							<h4>Nowe wyzwania z YM</h4>
+							<p>W lutym postanawiam zmienić pracę. Dołączam do zespołu YM jako front-end developer, tym samym zmieniając główny profil swojej ścieżki zawodowej.</p>
+							<p>To tutaj nabieram obycia z Javascriptem i biblioteką jQuery. Początkowo prowadzę również samodzielnie dział SEO. W marcu rodzi się mój drugi syn.</p>
+						</article>
+						<article>
+							<h4>Aplikacja natywna na iOs i Android</h4>
+							<p>W YM pojawia się bardzo ciekawe wyzwanie. Z wykorzystaniem wyłącznie języka HTML, CSS, Javascript oraz frameworka Phonegap</p>
+							<p>piszę swoją pierwszą natywną aplikację na urządzenia mobilne obsługiwane pod kontrolą systemów iOs i Android.</p>
+						</article>
+						<article>
+							<h4>Zakładam swoją działalność gospodarczą</h4>
+							<p>Od teraz jestem sam sobie sterem, żeglarzem, okrętem... choć nadal najczęściej pływam pod banderą Youngmedia ;)</p>
+							<p>Pracuję głównie jako front-end developer i fotograf.</p>
+						</article>
+						<article>
+							<h4>Praca w korporacji - trafiam do Euvic</h4>
+							<p>Postanowiłem w końcu spróbować swoich sił w większej firmie niż w tych, w których pracowałem dotychczas. </p>
+							<p>W Euvic (dawniej LGBS) piszę kod html/css/js oraz wdrażam swoje kody do korporacyjnego CMS - Liferay. </p>
+						</article>
+						<article>
+							<h4>Startup z Londynu - team Kleek'a w Tychach</h4>
+							<p>Czułem, że w Euvic mój rozwój nie zmierza w oczekiwaną przeze mnie stronę - zmieniam więc pracę i trafiam do Kleek'a.</p>
+							<p>Tutaj w końcu zaczynam pracę z Angular.js i nabieram sporo nowych doświadczeń.</p>
+						</article>
+						<article>
+							<h4>ING Services Polska</h4>
+							<p>Nowy rok - nowe wyzwania! Pełen obaw czy dam radę w dużej korporacji trafiam do zespołu programistów w ISP.</p>
+							<p>Trochę projektuje UX/UI, więcej programuje - czuję że robie to, co lubię najbardziej!</p>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolio">
+			<div class="container">
+				<h3>Portfolio</h3>
+				<p class="info">Mimo, iż większość swojego czasu poświęcam kodowaniu to nadal zdarza mi się projektować strony i robić zdjęcią. Zachęcam do zapoznania się z wybranymi projektami.</p>
+			</div>
+			
+			<div class="prtfl">
+				<img src="gfx/portfolio_1.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Fotogriafia ślubna</h2>
+							<p>Aleksandra i Grzegorz</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_15.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Fotogriafia ślubna</h2>
+							<p>Przygotowania Sylwii</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_3.jpg" alt="portfolio_1" width="800" height="800">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Fotogriafia reklamowa</h2>
+							<p>Warsztat Samochodowy Krupa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_4.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Fotogriafia wnętrz</h2>
+							<p>Restauracja Francesco</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_11.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Projekt strony internetowej</h2>
+							<p>Door</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="prtfl">
+				<img src="gfx/portfolio_5.jpg" alt="portfolio_1" width="860" height="860">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Fotogriafia wnętrz</h2>
+							<p>Hotel Tychy</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_9.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Projekt strony internetowej</h2>
+							<p>Attente</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_6.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Fotografia dziecięca</h2>
+							<p>Zuzia</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_12.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Identyfikacja wizualna</h2>
+							<p>Xors Grupa Kreatywna</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_7.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Fotografia wnętrz</h2>
+							<p>Restauracja Joker</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_10.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Projekt strony internetowej</h2>
+							<p>Riana</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_8.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Fotografia kulinarna</h2>
+							<p>Śledź korzenny w oleju z sałatką tatarską</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_13.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Fotografia Ślubna</h2>
+							<p>Monika i Marcin</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_2.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Fotografia wnętrz</h2>
+							<p>Kuchnia</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="prtfl">
+				<img src="gfx/portfolio_14.jpg" alt="portfolio_1" width="1000" height="1000">
+				<div class="description">
+					<div class="tb">
+						<div class="tc">
+							<h2>Fotografia Ślubna</h2>
+							<p>Sylwia i Marcin</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="fed">
+			<div class="container">
+				<h3>FED, czyli Front-end development</h3>
+				<p class="info">Na moim dysku, w chwili obecnej, znajduje się ponad 200 wdrożonych projektów. Począwszy od prostych stron typu one-page po złożone aplikacje webowe. Poniżej prezentuję wybrane projekty, które były dla mnie największym wyzwaniem i z których jestem dumny ;)</p>
+				<div class="row">
+					<div class="col-md-4">
+						<article class="row">
+							<div class="foto col-md-12 col-sm-4 col-xs-12">
+								<div class="image" style="background: url(gfx/fed_kliket.jpg) center center no-repeat"></div>
+							</div>
+							<div class="description col-md-12 col-sm-8 col-xs-12">
+								<h2>Kliket</h2>
+								<p>Kliket to platforma marketingu mobilnego. Do moich zadań należało wdrożenie projektu graficznego landing page'a oraz oprogramowanie warstwy front-endu kliketa i panelu administracyjnego.</p>
+								<span>Technologie: <strong>HTML5, CSS3, JS, AJAX, RWD</strong></span>
+							</div>
+						</article>
+					</div>
+					<div class="col-md-4">
+						<article class="row">
+							<div class="foto col-md-12 col-sm-4 col-xs-12">
+								<div class="image" style="background: url(gfx/fed_dostartu.jpg) center center no-repeat"></div>
+							</div>
+							<div class="description col-md-12 col-sm-8 col-xs-12">
+								<h2>Do startu</h2>
+								<p>Do startu jest systemem do organizowania zawodów sportowych z pomiarem czasu. Moim zadaniem było oprogramowanie warstwy front-endowej aplikacji i widoków uzytkowników.</p>
+								<span>Technologie: <strong>HTML5, CSS3, JS, AJAX, RWD</strong></span>
+							</div>
+						</article>
+					</div>
+					<div class="col-md-4">
+						<article class="row">
+							<div class="foto col-md-12 col-sm-4 col-xs-12">
+								<div class="image" style="background: url(gfx/fed_leaderfox.jpg) center center no-repeat"></div>						
+							</div>
+							<div class="description col-md-12 col-sm-8 col-xs-12">
+								<h2>Leader fox</h2>
+								<p>Polska strona internetowa w formie katalogu produktów czeskiego producenta rowerów. Moją rolą było zakodowanie projektu do HTML/CSS/JS z zachowaniem responsywności. </p>
+								<span>Technologie: <strong>HTML5, CSS3, JS, RWD</strong></span>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-4 col-sm-6 cdata">
+						<article>
+							<h3>Dane kontaktowe</h3>
+							<p>Wasniowski.pl<br/>Kamil Waśniowski</p>
+							<p>ul. Dąbrowskiego 63 lok.65<br/> 43-100 Tychy</p>
+							<p>NIP: 646-266-97-69<br/>Regon: 243574164</p>
+							<p>tel. 604 188 722<br/>kontakt@wasniowski.pl</p>
+						</article>
+					</div>
+					
+					<div class="col-md-4 col-sm-6">
+						<h3>Formularz kontaktowy</h3>
+						<p>Jeśli chcesz się ze mną skontaktować - możesz użyć formularza kontaktowego.</p>		
+						
+						<form>
+							<input type="text" placeholder="imię i nazwisko">
+							<input type="text" placeholder="e-mail lub numer telefonu">
+							<textarea placeholder="Treść wiadomości"></textarea>
+							<input type="submit" value="Wyślij wiadomość">
+						</form>
+					</div>
+					
+					<div class="col-md-4 mapcanv">
+						<div id="mapa"></div>
+					</div>
+				</div>
+					
+			</div>
+		</section>
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<p>Zobacz również: <a href="http://www.fotoreportaz-slubny.com" target="_blank">fotoreportaz-slubny.com</a></p>
+					</div>
+					<div class="col-md-6 col-sm-6 txtright">
+						<p>&copy; 2014 Wasniowski.pl</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+		
+
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBzS1rVhfDEuliLyKprMcg2Dwhp9G3lXJQ&sensor=true"></script> 
+		
+		<script type="text/javascript" src="jquery/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="jquery/jquery-html5shiv.js"></script>
+		<script type="text/javascript" src="jquery/jquery.swipebox.min.js"></script>
+		<script type="text/javascript" src="jquery/scripts.js"></script>
+
+	</body>
+</html>
+
+
